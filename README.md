@@ -8,6 +8,8 @@ This repository contains a dialogue chat bot, which is able to:
 For a chit-chat mode we will use a pre-trained neural network engine available from  [ChatterBot](https://github.com/gunthercox/ChatterBot).
 For the programming-related questions mode we will train a classifier that will predict exactly one tag (=programming language) and will be also based on Logistic Regression with TF-IDF features. Then we rank questions using embeddings to calculate similarity between the question and existing threads (question on StackOverflow).
 
+![model](model.png)
+
 ## Installation
 
 - Run the week5-project.ipynb to generate train models.
