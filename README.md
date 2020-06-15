@@ -1,6 +1,21 @@
-# Chatbot project
+## Description
 
-This folder contains the starting code for the chatbot project.
+This repository contains a dialogue chat bot, which is able to:
+
+* answer programming-related questions (using StackOverflow dataset);
+* chit-chat and simulate dialogue on all non programming-related questions.
+
+For a chit-chat mode we will use a pre-trained neural network engine available from  [ChatterBot](https://github.com/gunthercox/ChatterBot).
+For the programming-related questions mode we will train a classifier that will predict exactly one tag (=programming language) and will be also based on Logistic Regression with TF-IDF features. Then we rank questions using embeddings to calculate similarity between the question and existing threads (question on StackOverflow).
+
+## Installation
+
+- Run the week5-project.ipynb to generate train models.
+- Run the main_bot.py by passing the token of your telegram bot as an argument. See doc [here](https://core.telegram.org/bots#creating-a-new-bot). to learn how to create a telegram bot.
+
+```bash
+python install main_bot.py --token "your_token_here"
+```
 
 ## Troubleshooting
 
