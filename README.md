@@ -14,7 +14,7 @@ For the programming-related questions mode we will train a classifier that will 
 - Run the main_bot.py by passing the token of your telegram bot as an argument. See doc [here](https://core.telegram.org/bots#creating-a-new-bot). to learn how to create a telegram bot.
 
 ```bash
-python install main_bot.py --token "your_token_here"
+python3 install main_bot.py --token "your_token_here"
 ```
 
 ## Troubleshooting
